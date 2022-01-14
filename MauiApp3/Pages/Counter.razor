@@ -1,0 +1,45 @@
+﻿@page "/counter"
+
+<div class="wrapper bg-white rounded">
+    <div class="content"> <a href="#"><span class="fa fa-angle-left pr-2"></span>Back to Question Bank</a>
+        <p class="text-muted">Soru bankasına dön</p>
+        <br />
+        <div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+<h5>Question 10 OF 20</h5>
+<br />
+        <p class="text-justify h5 pb-2 font-weight-bold">Which type of crossing allows cyclist to ride across while pedestrians are also crossing?</p>
+        <p class="text-muted">Yayalar karşıdan karşıya geçerken bisikletlinin karşıya geçmesini sağlayan yaya geçidi türü hangisidir?</p>
+        <div class="options py-3"> 
+            <label class="rounded mt-1 p-2 option"> Zebra <span class="text-muted">Zebra</span>
+                <input type="radio" name="radio"> 
+                <span class="crossmark"></span> 
+            </label> 
+            <label class="rounded mt-1 p-2 option"> Pelican <span class="text-muted">Pelikan</span>
+                <input type="radio" name="radio"> 
+                <span class="checkmark"></span> 
+            </label>
+            <label class="rounded mt-1 p-2 option"> Puffin <span class="text-muted">Puffin</span>
+                <input type="radio" name="radio">
+                <span class="crossmark"></span>
+            </label> 
+            <label class="rounded mt-1 p-2 option"> Toucan <span class="text-muted">Toucan</span>
+                <input type="radio" name="radio"> 
+                <span class="crossmark"></span> 
+            </label> 
+            </div> 
+          <p class="mb-4 pl-2"> That's true answer ! <p class="pl-2 text-muted"> Bu doğru cevap ! </p> </p>
+          
+          <input type="submit" value="Next" class="mx-sm-0 mx-1">
+    </div> 
+</div>
+
+@code {
+	private int currentCount = 0;
+
+	private void IncrementCount()
+	{
+		currentCount++;
+	}
+}
